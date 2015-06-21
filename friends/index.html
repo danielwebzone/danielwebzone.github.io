@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div>
+    <h2>Be my friend</h2>
+    {% for media in site.data.social %}
+        <a href="{{media.link}}" target="_blank">{{media.name}}</a>
+    {% endfor %}
+</div>

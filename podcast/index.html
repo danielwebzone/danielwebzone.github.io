@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <h1 class="title">
+      I have an hour to record a podcast
+    </h1>
+    
+    <div class="info">
+        <p>
+            Each weekday I have from the time I wake up until the time I go to work to record, edit, and publish a podcast. 
+        </p>
+        <p>
+            This is usually about <span class="underline bold">one hour.</span>
+        </p>
+        <p>
+            This is a bad idea.
+        </p>
+    </div>
+    <div class="episode">
+        <h2>Last Episode:</h2>
+    
+        {% assign post = site.posts.first %}
+        
+        <h3>{{ post.title }} - {{post.date | date: "%-d %B %Y" }}</h3>
+        <img src={{post.image}}>
+        <p>{{post.content }}</p>
+        <span class="player">
+            <audio src="{{post.episode}}" id="audio" controls></audio>
+        </span>
+    </div>
+    
+    <a href="/archive">Click here for older episodes</a>
+    
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
