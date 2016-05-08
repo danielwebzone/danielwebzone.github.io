@@ -1,5 +1,5 @@
 # Site settings
-title: Daniel's Web Zone
+title: zone
 email: your-email@domain.com
 description: my website
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -7,4 +7,3 @@ url: "http://thedaniel.zone" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
