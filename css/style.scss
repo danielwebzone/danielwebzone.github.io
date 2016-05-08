@@ -1,0 +1,46 @@
+---
+---
+
+p {
+    color: #3A3E3B;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color:#86A9CA;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Lekton', sans-serif;
+}
+
+.post-content {
+    border-left: 3px solid black;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.post-link {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.youtube-video {
+    text-align: center;
+}
+
+.post-title {
+    background: black;
+    color: white;
+    padding: 5px;
+    margin-left: -10px;
+    margin-top: 0;
+}
