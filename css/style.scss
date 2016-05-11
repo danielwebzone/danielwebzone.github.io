@@ -1,6 +1,7 @@
 ---
 ---
 
+/* Override elements */
 p {
     color: #3A3E3B;
 }
@@ -16,6 +17,7 @@ a:hover {
 }
 
 
+/* Custom classes */
 .content {
     width: 80%;
     margin: 0 auto;
@@ -49,3 +51,12 @@ a:hover {
     max-width: 100%;
     height: auto;
 }
+
+
+/* #ids */
+
+#home-header {
+  font-size: 1.5em;
+}
+
+
