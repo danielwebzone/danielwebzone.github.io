@@ -3,12 +3,12 @@ layout: default
 ---
 <div>
     <h1 id="home-header">http://thedaniel.zone</h1>
-    {% for post in site.posts %}
-    <div>
-	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-	    {{ post.title }}
-	</a>
+    <div id="home-posts">
+	{% for post in site.posts %}
+	<div>
+	    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>{% if forloop.last == false %}<span class="post-dot">&thinsp;//&thinsp;</span>{% endif %}
+	</div>
+	{% endfor %}
     </div>
-    {% endfor %}
 </div>
 
