@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>news of the world</title>
+    </head>
+    <body>
+	<!-- ?autoplay=1 -->
+	<iframe class="vid" width="100%" height="100%" src="https://www.youtube.com/embed/zXHSlC0nFs0?autoplay=1" frameborder="0" allowfullscreen></ifram>e
+
+	<div class="news-box" >
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	    <iframe class="article" src="https://en.wikinews.org/wiki/Special:Random"></iframe>
+	</div>
+		    
+	<style>
+	 body {
+	     margin: 0;
+	 }
+	 
+	 .vid {
+	     height: 100%;
+	     width: 100%;
+	     margin: 0;
+	     position: fixed;
+	     left:0;
+	     top:0;
+	     overflow:hidden;
+	     z-index: -1;
+	 }
+	 
+	 .news-box {
+	     display: flex;
+	     flex-wrap: wrap;
+	     z-index: 2;
+	 }
+
+	 .article {
+	     width: 600px;
+	     height: 600px;
+	 }
+
+	</style>
+
+	<script type="text/javascript">
+	 var news = document.getElementsByClassName("article");
+
+
+	 setInterval(function() {
+	     for (var i = 0; i < news.length; i++) {
+		 news[i].src = "https://en.wikinews.org/wiki/Special:Random";
+	     }
+	 }, 5000);
+	</script>
+    </body>
+</html>
